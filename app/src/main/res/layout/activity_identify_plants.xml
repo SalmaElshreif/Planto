@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Identify_Plants_Activity">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="421dp"
+            android:layout_height="139dp"
+            android:background="@drawable/rectangle_green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.03" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="414dp"
+            android:layout_height="140dp"
+            android:background="@drawable/rectangle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageView
+        android:id="@+id/cameraReasult"
+        android:layout_width="320dp"
+        android:layout_height="526dp"
+        android:layout_gravity="center"
+        android:src="@drawable/img1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.354"
+        app:shapeAppearanceOverlay="@style/roundimageview" />
+
+    <Button
+            android:id="@+id/upload"
+            android:layout_width="146dp"
+            android:layout_height="47dp"
+            android:background="@drawable/bg_round"
+            android:drawableRight="@drawable/ic_upload_photo"
+            android:text="Upload"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/openCamera"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.367" />
+
+        <Button
+            android:id="@+id/openCamera"
+            android:layout_width="146dp"
+            android:layout_height="47dp"
+            android:background="@drawable/bg_round"
+            android:drawableRight="@drawable/ic_camera"
+            android:text="Identify"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.122" />
+
+        <!--    <ImageButton-->
+        <!--        android:id="@+id/openCamera"-->
+        <!--        android:layout_width="98dp"-->
+        <!--        android:layout_height="64dp"-->
+        <!--        android:background="#fff"-->
+        <!--        android:src="@drawable/ic_camera_alt"-->
+        <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintHorizontal_bias="0.891"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintTop_toTopOf="parent"-->
+        <!--        app:layout_constraintVertical_bias="0.952" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+

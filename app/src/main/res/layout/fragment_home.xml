@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Home_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="35sp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="33dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Welcome back ,"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Straw Hats"
+                android:fontFamily="@font/poppinsbold"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="start"
+                android:layout_marginStart="33dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_width="89dp"
+            android:layout_height="75dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="130dp"
+            android:src="@drawable/user" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50sp">
+
+        <ImageView
+            android:id="@+id/plant_disease_service"
+            android:layout_width="wrap_content"
+            android:layout_height="101dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="15sp"
+            android:layout_marginEnd="33dp"
+            android:onClick="plant_disease_service"
+            android:src="@drawable/service1" />
+
+    <ImageView
+        android:id="@+id/identify_plant_service"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15sp"
+        android:onClick="identify_plant_service"
+        android:src="@drawable/service2" />
+
+    <ImageView
+        android:id="@+id/soil_irrigation"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15sp"
+        android:onClick="soil_irrigation"
+        android:src="@drawable/service3" />
+
+    </LinearLayout>
+
+</LinearLayout>
